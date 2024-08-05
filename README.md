@@ -10,7 +10,10 @@ contracts/
 │   ├── wasabi_short_pool.rs
 │   └── utils/
 │      ├── hash.rs
-│      └── perp_utils.rs
+│      ├── perp_utils.rs
+│      ├── erc4626.rs
+│      ├── weth.rs
+│      └── monolith_upgradeable.rs // includes several upgradability contracts from openzeppelin + other helper functions from oz
 │
 └── vault/
 │   ├── wasabi_vault.rs
@@ -34,6 +37,7 @@ test/
 #### `Wasabi Vault`
 * An upgradeable ERC-4626-compliant vault that interfaces with a WasabiPerps pool, leveraging the ERC-4626 standard as its foundational logic.
   * Consequently, the ERC-4626 contract will be implemented.
+  * WETH will also be implemented.
 * The contract also features functions for interacting with the associated WasabiPerps pool and includes an address provider to manage external contract addresses.
 
 #### `WasabiShortPool` and `WasabiLongPool`
