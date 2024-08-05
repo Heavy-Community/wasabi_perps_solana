@@ -1,7 +1,51 @@
-# Wasabi Perps Solana
-* wasabi_perps implementation on solana
+# Wasabi Perps implementation on Solana
 
-### Draft Architecture
+# Roadmap
+- This document outlines the roadmap and key tasks for implementing Wasabi Perps on Solana over a four-week period.
+
+## Week 1
+
+- **Base Wasabi Pool**
+  - Set up the foundational structure for the Wasabi long and short pools.
+
+- **Utils - Monolith file with utils for upgradability**
+  - Develop utility functions and contracts to ensure upgradability, incorporating several upgradeable contracts and helper functions from OpenZeppelin.
+
+- **WETH**
+  - Integrate the WETH (Wrapped Ether) functionality.
+
+## Week 2
+
+- **Long/Short pools**
+  - Develop and implement Wasabi's Long/Short pools.
+
+- **The Rest of the Utils for Pools**
+  - Complete remaining utility functions required for pool management.
+
+## Week 3
+
+- **Long/Short**
+  - Continue development on Long/Short features.
+  
+- **Accounts/**
+  - Set up and configure account management. This includes all four contracts related with account management.
+
+- **Debt/**
+  - Implement the debt management features.
+
+## Week 4
+
+- **Vault/**
+  - Implement and integrate vault functionalities.
+
+- **ERC4626**
+  - Implement `ERC4626` standard functionality.
+
+- **Finalization of Product**
+  - Finalize and polish the product.
+  - Conduct final testing and prepare for audit.
+
+### Scope and Draft Architecture
 ```
 contracts/
 ├── pools/
@@ -32,12 +76,14 @@ scripts/
 test/
 ```
 
-### The smart contracts that need to be implemented
+## Diagram
+![image](./image.png)
+
+## The smart contracts that need to be implemented
 -----
 #### `Wasabi Vault`
 * An upgradeable ERC-4626-compliant vault that interfaces with a WasabiPerps pool, leveraging the ERC-4626 standard as its foundational logic.
   * Consequently, the ERC-4626 contract will be implemented.
-  * WETH will also be implemented.
 * The contract also features functions for interacting with the associated WasabiPerps pool and includes an address provider to manage external contract addresses.
 
 #### `WasabiShortPool` and `WasabiLongPool`
@@ -58,5 +104,3 @@ test/
 
 #### Accounts logic
 * AddressProvider, PerpManager & Roles are helper contracts that can be combined in a monolith contract or kept as standalone contracts. It can be further discussed.
-
-![image](./image.png)
