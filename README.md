@@ -27,4 +27,4 @@
 #### Accounts logic
 * AddressProvider, PerpManager & Roles are helper contracts that can be combined in a monolith contract or kept as standalone contracts. It can be further discussed.
 
-![image](https://github.com/user-attachments/assets/822ce07b-b3fc-4b6d-8a83-08858cbc056d)
+![image](./image.png)
