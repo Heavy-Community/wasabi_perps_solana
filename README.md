@@ -1,6 +1,34 @@
 # Wasabi Perps Solana
 * wasabi_perps implementation on solana
 
+### Draft Architecture
+```
+contracts/
+├── pools/
+│   ├── base_wasabi_pool.rs
+│   ├── wasabi_long_pool.rs
+│   ├── wasabi_short_pool.rs
+│   └── utils/
+│      ├── hash.rs
+│      └── perp_utils.rs
+│
+└── vault/
+│   ├── wasabi_vault.rs
+│   └── iwasabi_vault.rs
+│
+└── debt/
+│   ├── debt_controller.rs
+│   └── idebt_controller.rs
+│
+└── accounts/
+│    ├── perp_manager.rs
+│    └── roles.rs
+│    └── address_provider.rs
+│    └── iaddress_provider.rs
+scripts/
+test/
+```
+
 ### The smart contracts that need to be implemented
 -----
 #### `Wasabi Vault`
