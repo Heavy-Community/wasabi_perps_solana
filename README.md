@@ -66,10 +66,12 @@
 -----
 # Тechnical Stack
 - **Anchor**
-  - For testing and building efficiently and securely the programs.
+  - Will be using it because it offers abstractions for common patterns and streamlines program deployment, thus enhancing the overall development process. Additionally, it provides a suitable testing harness for our needs.
 - **SPL**
   - Using SPL for compatibility with token standards and for implementing upgradeability functions.
   - Some of the programs will be used for reference implementation.
+- **Solana CLI**
+  - Solana CLI is used for deploying programs, managing accounts, and interacting with the network from the terminal.
 -----
 ### Scope and Draft Architecture
 ```
