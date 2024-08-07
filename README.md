@@ -11,10 +11,6 @@
   - Set up the foundational structure for the Wasabi long and short pools.
   - Implement the core logic of the program in `wasabi_pool.rs`.
   - Isolated unit testing to some of the functions of the program.
-- **Utils - Monolith program with utils for upgradability**
-  - Develop utility functions and programs to ensure upgradability, incorporating several upgradeable programs and helper functions in `monolith_upgradeable.rs`, including:
-  - the program that is standardized as multicall aggregator function.
-  - The rest of the utility programs will be completed in the second week.
 - **WSOL**
   - Implement the WSOL program.
   - This includes implementing an ERC20-like Token program for the Solana blockchain, which will serve as a blueprint for the WSOL program.
@@ -23,7 +19,6 @@
 ## Week 2
 - **Base Wasabi Pool**
   - Apply final touches to the `wasabi_pool.rs` program.
-  - Finish implementation of any left out utility functions.
   - Tests implementation.
   - By the end of the week, it should be ready to be used from the short and long pools!
 
