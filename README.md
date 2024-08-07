@@ -18,17 +18,14 @@
 - **WSOL**
   - Implement the WSOL program.
   - This includes implementing an ERC20-like Token program for the Solana blockchain, which will serve as a blueprint for the WSOL program.
-  - The implementation will follow the one provided by SPL's token programs.
+  - The implementation blueprint will adhere to the guidelines provided by SPL's token programs.
 
 ## Week 2
 - **Base Wasabi Pool**
   - Apply final touches to the `wasabi_pool.rs` program.
+  - Finish implementation of any left out utility functions.
   - Tests implementation.
   - By the end of the week, it should be ready to be used from the short and long pools!
-- **The rest of the upgradability utils for the pools**
-  - Complete remaining utility functions required for pool management. Including:
-  - needed functions from the universal upgradeable proxy standard programs.
-  - needed functions from the ownable upgradeable programs.
 
 ## Week 3
 - **Long pool**
@@ -66,7 +63,7 @@
 -----
 # Тechnical Stack
 - **Anchor**
-  - Will be using it because it offers abstractions for common patterns and streamlines program deployment, thus enhancing the overall development process. Additionally, it provides a suitable testing harness for our needs.
+  - Using Anchor, which offers abstractions for common patterns and streamlines program deployment, thus enhancing the overall development process. Additionally, it provides a suitable testing harness for our needs.
 - **SPL**
   - Using SPL for compatibility with token standards and for implementing upgradeability functions.
   - Some of the programs will be used for reference implementation.
